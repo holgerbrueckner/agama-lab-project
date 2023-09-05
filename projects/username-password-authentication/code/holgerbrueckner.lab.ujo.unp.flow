@@ -1,4 +1,5 @@
-Flow holgerbrueckner.lab.ujo.unp
+// 
+Flow __________
      Basepath ""
 // Create Auth Service instance
 authService = Call io.jans.as.server.service.AuthentctionService#class 
@@ -17,8 +18,8 @@ Repeat 3 times max
      // Check if auth result is true
      When authResult.success is true
           // End flow by returning result object
-          it_udkug = { success: true, data: { userId: authResult.uid } }
-          Finish it_udkug
+          it_aelyh = { success: true, data: { userId: authResult.uid } }
+          Finish it_aelyh
 // Retry count exceeded. End flow returning result object
-it_xaizr = { success: false, error: "Retry count exceeded" }
-Finish it_xaizr
+it_junev = { success: false, error: "Retry count exceeded" }
+Finish it_junev
