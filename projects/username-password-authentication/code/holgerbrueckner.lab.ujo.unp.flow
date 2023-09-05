@@ -1,5 +1,5 @@
 // 
-Flow __________
+Flow holgerbrueckner.lab.ujo.unp
      Basepath ""
 // Create Auth Service instance
 authService = Call io.jans.as.server.service.AuthentctionService#class 
