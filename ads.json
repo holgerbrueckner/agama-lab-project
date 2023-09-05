@@ -12,6 +12,9 @@
         "tags": [
             "explore"
         ],
-        "noDirectLaunch": []
+        "noDirectLaunch": [],
+        "configs": {
+            "holgerbrueckner.": {}
+        }
     }
 }
