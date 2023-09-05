@@ -1,1 +1,17 @@
-{}
+{
+    "username-password-authentication": {
+        "projectName": "username-password-authentication",
+        "description": "A sample Username & Password authentication journey",
+        "type": "community",
+        "author": "holgerbrueckner",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/holgerbrueckner/agama-lab-project",
+        "githubUri": "https://github.com/holgerbrueckner/agama-lab-project",
+        "license": "MIT",
+        "lastUpdated": "1693926844564",
+        "tags": [
+            "explore"
+        ],
+        "noDirectLaunch": []
+    }
+}
