@@ -1,3 +1,25 @@
 // 
 Flow holgerbrueckner.lab.ujo.unp
      Basepath ""
+// Create Auth Service instance
+authService = Call io.jans.as.server.service.AuthentctionService#class 
+// Init CDIUtil Object
+cdiUtil = Call io.jans.service.cdi.util.CdiUtil#bean authService
+// Declared empty result Object
+authResult = {}
+// Retry 3 times if username & password are wrong
+Repeat 3 times max
+     // Load the login page that prompts for username & password. Store page output in creds object.
+     creds = RRF "login.ftlh" authResult
+     // Validate UnP using cdiUtil's Authserver instance and store result in authResult
+     authResult.success = Call cdiUtil authenticate creds.username creds.password
+     // Store creds.username in authResult.uid for retry purposes
+     authResult.uid = creds.username
+     // Check if auth result is true
+     When authResult.success is true
+          // End flow by returning result object
+          it_mcuke = { success: true, data: { userId: authResult.uid } }
+          Finish it_mcuke
+// Retry count exceeded. End flow returning result object
+it_bwdzr = { success: false, error: "Retry count exceeded" }
+Finish it_bwdzr
