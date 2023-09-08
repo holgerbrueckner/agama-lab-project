@@ -15,7 +15,8 @@
         "noDirectLaunch": [],
         "configs": {
             "holgerbrueckner.": {},
-            "holgerbrueckner.lab.ujo.unp": {}
+            "holgerbrueckner.lab.ujo.unp": {},
+            "holgerbrueckner.lab.ujo.unp_copy_test_validation": {}
         }
     }
 }
