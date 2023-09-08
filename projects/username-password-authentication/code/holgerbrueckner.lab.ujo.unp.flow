@@ -18,8 +18,8 @@ Repeat 3 times max
      // Check if auth result is true
      When authResult.success is true
           // End flow by returning result object
-          it_mcuke = { success: true, data: { userId: authResult.uid } }
-          Finish it_mcuke
+          it_cnsiq = { success: true, data: { userId: authResult.uid } }
+          Finish it_cnsiq
 // Retry count exceeded. End flow returning result object
-it_bwdzr = { success: false, error: "Retry count exceeded" }
-Finish it_bwdzr
+it_iebco = { success: false, error: "Retry count exceeded" }
+Finish it_iebco
