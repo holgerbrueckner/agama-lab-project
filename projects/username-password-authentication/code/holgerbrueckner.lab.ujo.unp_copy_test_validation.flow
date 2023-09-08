@@ -17,9 +17,6 @@ Repeat 3 times max
      authResult.uid = creds.username
      // Check if auth result is true
      When authResult.success is true
-          // End flow by returning result object
-          it_mcuke = { success: true, data: { userId: authResult.uid } }
-          Finish it_mcuke
 // Retry count exceeded. End flow returning result object
-it_bwdzr = { success: false, error: "Retry count exceeded" }
-Finish it_bwdzr
+it_roqaj = { success: false, error: "Retry count exceeded" }
+Finish it_roqaj
